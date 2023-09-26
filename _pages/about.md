@@ -6,7 +6,7 @@ subtitle: Ph.D. student at UCSD
 
 profile:
   align: right
-  image: s2.jpg
+  image: square.jpg
   image_circular: false # crops the image to make it circular
 
 news: true  # includes a list of news items
