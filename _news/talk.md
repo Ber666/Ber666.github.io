@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited talk at **Mila - Quebec AI Institute** and **ServiceNow Research**. 
+Invited talk at Mila - Quebec AI Institute and ServiceNow Research. 
