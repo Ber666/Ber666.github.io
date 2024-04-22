@@ -94,41 +94,58 @@ We need stronger regularization.
     Local information tells a lot about global information: You can ignore a direction if the gradient is larger than 0, because you know it will never decrease.
 
 - Zero-order condition: The intersect line is always above the actual functions
+
     $$f(\lambda x + (1-\lambda) y) \le \lambda f(x) + (1-\lambda)f(y)$$
 
 **Proof**
 
 Hint: Think about the geometry. Increasing order need taking derivation, otherwise integration.
-- 0 -> 1: $$f(y+\lambda(x-y)) \le \lambda f(x) + (1-\lambda)f(y)$$
+- 0 -> 1: 
+
+    $$f(y+\lambda(x-y)) \le \lambda f(x) + (1-\lambda)f(y)$$
+
     Taking derivative of $\lambda$:
+
     > Quick review: Think of the limit when $\lambda \rightarrow 0$, and ignore smaller items in the Taylor expansion.
+
     $$<\nabla f(y+\lambda(x-y)), (x-y)> \le f(x) - f(y)$$
+    
     Setting $\lambda =0$:
+    
     $$<\nabla f(y), x-y> \le f(x) - f(y)$$
 
 - 1 -> 2: 
     
     **(a)** Starting with the simple case where $d=1$.
+    
     $$f(y) \ge f(x) + f'(x) (y-x)$$
+    
     $$f(x) \ge f(y) + f'(y) (x-y)$$
-    From these two inequation, we can get:$$f'(y)(x-y) \le f(x)-f(y) \le f'(x)(x-y)$$
-    Assuming $x-y>0$
-    $$\frac{f'(x)-f'(y)}{x-y}\ge 0$$
+    
+    From these two inequation, we can get:
+    
+    $$f'(y)(x-y) \le f(x)-f(y) \le f'(x)(x-y)$$
+    
+    Assuming $x-y>0$,
 
+    $$\frac{f'(x)-f'(y)}{x-y}\ge 0$$
 
     **(b)** For any dimensions, we want to make it into 1-d:
     
     $$g(\alpha) = f(x+\alpha v)$$
-    We can show it's also a convex function by expanding it. So, applying the 1-d conclusion, we have:
+    
+    We can show it's also a convex function by expanding it. So, applying the $1-d$ conclusion, we have:
 
     $$g''(\alpha)\ge 0$$
+
     $$v^T\nabla f(x+\alpha v)v \ge 0$$
+    
     Taking $\alpha=0$, we get the definition of semi-positive matrix.
 
 **Strongly convex**
-<span style="font-size:50%">
+
 > Intuition: $x^2$ is the standard convex function. If a function is "more convex" than $mx^2$...
-</span>
+
 Definition of $m$-strong convex:
 $$ f(x) - \frac{m}{2} ||x||^2 \text{ is convex.}$$
 
