@@ -145,3 +145,12 @@ The functional derivative part?
 
 Theorem 2 (trivial)
 
+## Soft Actor-Critic
+
+Unfortunately, the combination of off-policy learning and high-dimensional, nonlinear
+function approximation with neural networks presents a major challenge for stability and convergence.
+
+This challenge is further exacerbated in continuous state and action spaces, where a separate actor network is often used to perform the maximization in Q-learning.
+
+SAC compared to AC -> Offline
+SAC compared to Q-learning -> Easier to converge / continuous
