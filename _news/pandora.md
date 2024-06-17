@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Check out [𝒫𝒶𝓃𝒹𝑜𝓇𝒶](world-model.ai), our new work towards a general **world model** 🌎
+Check out [𝒫𝒶𝓃𝒹𝑜𝓇𝒶](https://world-model.ai), our new work towards a general **world model** 🌎
