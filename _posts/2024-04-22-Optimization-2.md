@@ -10,6 +10,8 @@ related_posts: false
 related_publications: 
 ---
 
+## Probabilistic Definition of Solution
+
 What is a solution?
 
 - Problem: $min_{x\in A}f(x)$
