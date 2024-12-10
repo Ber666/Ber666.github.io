@@ -16,7 +16,6 @@ related_publications:
 This is the simplest algorithm of imitation learning. It's simply 
 
 
-
 Distribution Shift (no assumption of deterministic dynamics)
 
 Exposure bias (NLP)
